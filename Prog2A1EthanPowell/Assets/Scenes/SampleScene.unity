@@ -132,6 +132,7 @@ GameObject:
   m_Component:
   - component: {fileID: 38822673}
   - component: {fileID: 38822672}
+  - component: {fileID: 38822674}
   m_Layer: 0
   m_Name: Planet1 (2)
   m_TagString: Untagged
@@ -180,12 +181,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: aa6bbcd9f58d8e84d9b217e55c102c42, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 12.8, y: 12.8}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -201,11 +202,29 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3719082, y: 0.3719082, z: 0.3719082}
+  m_LocalScale: {x: 0.20451, y: 0.20451, z: 0.014618209}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1260752866}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &38822674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 38822671}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f855dbf3cf7ee2846a41dfcf53fb7e51, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RevolutionSpeed: 0
+  OrbitSpeed: 0
+  Planet: {fileID: 38822673}
+  Root: {fileID: 38822673}
+  PlanetSize: 0
+  RotatingCW: 1
 --- !u!1 &462626545
 GameObject:
   m_ObjectHideFlags: 0
@@ -264,8 +283,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0.679965, g: 0, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: a51490bb820404940ae399999689ea1a, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -284,8 +303,8 @@ Transform:
   m_GameObject: {fileID: 462626545}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.2067502, y: 0, z: 0}
-  m_LocalScale: {x: 0.66653323, y: 0.66653323, z: 0.66653323}
+  m_LocalPosition: {x: 1.86, y: 0, z: 0}
+  m_LocalScale: {x: 0.0686267, y: 0.0686267, z: 0.04574198}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1357978392}
@@ -572,8 +591,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0.8239019, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: edb7ec9215f98e94cb22450b568d3b15, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -593,7 +612,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.7250068, z: 0}
-  m_LocalScale: {x: 0.5193264, y: 0.5193264, z: 0.5193264}
+  m_LocalScale: {x: 0.054245, y: 0.054245, z: 0.02817086}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1195586923}
@@ -700,6 +719,8 @@ MonoBehaviour:
   OrbitSpeed: 0
   Planet: {fileID: 1193939442}
   Root: {fileID: 1195586923}
+  PlanetSize: 0
+  RotatingCW: 1
 --- !u!1 &1212276347
 GameObject:
   m_ObjectHideFlags: 0
@@ -758,8 +779,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b676eb775bc6aab448a5f9aaa77db715, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -779,7 +800,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.16837965, y: 0.16837965, z: 0.16837965}
+  m_LocalScale: {x: 0.098439, y: 0.098439, z: 0.016575124}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1151655912}
@@ -867,7 +888,6 @@ Transform:
   m_LocalScale: {x: 1.9546, y: 1.9546, z: 1.9546}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 38822673}
   - {fileID: 1151655912}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -887,6 +907,8 @@ MonoBehaviour:
   OrbitSpeed: 0
   Planet: {fileID: 1151655912}
   Root: {fileID: 1260752866}
+  PlanetSize: 0
+  RotatingCW: 1
 --- !u!1 &1357978390
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +1011,8 @@ MonoBehaviour:
   OrbitSpeed: 0
   Planet: {fileID: 462626547}
   Root: {fileID: 1357978392}
+  PlanetSize: 0
+  RotatingCW: 1
 --- !u!1 &1512169976
 GameObject:
   m_ObjectHideFlags: 0
@@ -1023,6 +1047,8 @@ MonoBehaviour:
   OrbitSpeed: 0
   Planet: {fileID: 2135747715}
   Root: {fileID: 1512169979}
+  PlanetSize: 0
+  RotatingCW: 1
 --- !u!212 &1512169978
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1149,8 +1175,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.95341825, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 8fc49c1e1038ba04981089e46944afaa, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1170,7 +1196,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -1.6127441, y: 0, z: 0}
-  m_LocalScale: {x: 0.45473343, y: 0.45473343, z: 0.45473343}
+  m_LocalScale: {x: 0.045405, y: 0.045405, z: 0.020647172}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1997836988}
@@ -1233,8 +1259,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b9a95601c91e5de4ba624d6f1371b779, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -1254,7 +1280,7 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.3099459, y: 0.3099459, z: 0.3099459}
+  m_LocalScale: {x: 0.098439, y: 0.098439, z: 0.030510766}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2135747715}
@@ -1361,6 +1387,8 @@ MonoBehaviour:
   OrbitSpeed: 0
   Planet: {fileID: 1614486694}
   Root: {fileID: 1997836988}
+  PlanetSize: 0
+  RotatingCW: 1
 --- !u!1 &2135747713
 GameObject:
   m_ObjectHideFlags: 0
@@ -1452,5 +1480,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 519420032}
+  - {fileID: 38822673}
   - {fileID: 1260752866}
   - {fileID: 1512169979}
