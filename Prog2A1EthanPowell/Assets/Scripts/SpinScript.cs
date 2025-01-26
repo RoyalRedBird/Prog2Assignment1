@@ -13,7 +13,7 @@ public class SpinScript : MonoBehaviour
 
     [SerializeField] float PlanetSize;
 
-    bool RotatingCW = true;
+    [SerializeField] bool RotatingCW = true;
 
     // Start is called before the first frame update
     void Start()
