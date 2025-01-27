@@ -6,10 +6,10 @@ using UnityEngine.Rendering;
 public class SpinScript : MonoBehaviour
 {
 
-    [SerializeField] float RevolutionSpeed;
+    [SerializeField] float RevolutionSpeed; 
     [SerializeField] float OrbitSpeed;
     [SerializeField] Transform Planet;
-    [SerializeField] Transform Root;
+    [SerializeField] Transform Root; 
 
     [SerializeField] float PlanetSize;
 
@@ -56,7 +56,7 @@ public class SpinScript : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
 
-            Debug.Log("Click!");
+            //Debug.Log("Click!");
 
             if (mousePos.x <= (Planet.position.x + (Planet.localScale.x)) && mousePos.x >= (Planet.position.x - (Planet.localScale.x)))
             {
